@@ -4,21 +4,23 @@ import Coin from './coin/Coin';
 
 const Coins = () => {
     const [coins, setCoins] = useState([])
-    const [spinner,setSpinner]=useState(true)
-    useEffect(() => {
+    const [spinner,setSpinner]=useState(false)
+    useEffect(() => { 
+        setSpinner(true)
         fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false')
             .then(res => res.json())
             .then(data => {
                 setCoins(data)
                 setSpinner(false)
             })
+            
     }, [])
     return (
         <>
             {
                 spinner ? <Spinner></Spinner> : <div>
                 <div>
-                    <div className='mt-9'>
+                    <div className='mt-9 text-center'>
                         <h1 className='text-3xl mb-3 font-mono'>Available Crypto Currencies</h1>
                         <h3 className='text-gray-400 text-xl mb-5'>Total Coins:{coins.length}</h3>
                     </div>

@@ -10,7 +10,7 @@ const Footer = () => {
                 <FaTwitter/>
                 <FaLinkedinIn/>
             </div>
-            <div className='mt-5 text-sm sm:text-base md:text-xl '>
+            <div className='mt-5 text-sm text-center sm:text-base md:text-xl '>
                 <h1>All Right Reserved By &copy; Marvel Crypto 2022 | 2030</h1>
             </div>
         </div>

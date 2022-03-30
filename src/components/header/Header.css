@@ -1,0 +1,17 @@
+@media screen and (max-width:768px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+        background: rgba(6, 15, 36, 0.89);
+        position: absolute;
+        top:80px;
+        left: 0;
+        width: 100vh;
+        height: calc(100vh - 80px);
+
+    }
+    .ul{
+        top: -600px;
+    }
+    
+}

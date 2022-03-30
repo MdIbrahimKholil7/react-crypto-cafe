@@ -6,7 +6,7 @@ import { FaMugHot } from 'react-icons/fa';
 const Hero = () => {
     return (
         <div className='w-full h-[100vh] bg-slate-800 grid place-items-center'>
-            <div className='text-white'>
+            <div className='text-white text-center'>
                 <h1 className='text-[22px] sm:text-[26px] md:text-4xl flex items-center font-mono leading-[4rem]'>Welcome to Marvel Crypto <span className='ml-8 flex items-center'><FaMugHot/></span></h1>
                 <Link className='bg-slate-600 py-3 px-6 rounded-lg mt-6 inline-block duration-300 text-lg hover:bg-slate-500'  to={'/coins'}>Explore Coins</Link>
             </div>
