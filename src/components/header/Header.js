@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='w-full bg-cyan-800 py-4 sticky top-0'>
-            <nav className='max-w-4xl mx-auto flex justify-between items-center text-white'>
+        <div className='w-full px-8 bg-gray-800 py-4 sticky top-0 shadow-lg'>
+            <nav className='w-[] md:max-w-4xl mx-auto flex justify-between items-center text-white'>
                 <div className="logo">
                     <h1 className='text-3xl font-mono'>Marvel Crypto</h1>
                 </div>
